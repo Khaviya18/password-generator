@@ -15,13 +15,7 @@ A **Password Generator** application built to create secure, customizable passwo
 
 ---
 
-## 📸 Demo
 
-![Password Generator Preview](demo-image.png)
-
-*(Replace `demo-image.png` with the path to your screenshot or demo GIF)*
-
----
 
 ## 🚀 How to Use
 
