@@ -1,0 +1,185 @@
+/* General Body Styling */
+body {
+  background-color: #121212; /* Dark Background */
+  font-family: "Poppins", Arial, sans-serif;
+  color: #e0e0e0; /* Light Text for Contrast */
+  margin: 0;
+  padding: 0;
+}
+
+/* Centering Container */
+.container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+}
+
+/* Password Generator Card */
+.password-generator {
+  background-color: #1e1e1e; /* Dark Card Background */
+  border-radius: 12px;
+  padding: 40px; /* Increased Padding */
+  width: 100%;
+  max-width: 600px; /* Increased Width */
+  min-height: 650px; /* Increased Height */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  animation: slideIn 0.5s ease-in-out;
+}
+
+/* Title and Subtitle Styling */
+.title {
+  font-size: 2em;
+  font-weight: bold;
+  color: #64ffda; /* Teal Accent Color */
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1em;
+  color: #b0bec5;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Input Fields Styling */
+.custom-input {
+  border-radius: 8px;
+  background-color: #2c2c2c; /* Slightly Lighter Dark Background */
+  color: #e0e0e0; /* Light Text */
+  font-size: 1.1em;
+  padding: 10px;
+  border: none;
+  margin-bottom: 15px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.custom-input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #64ffda; /* Teal Glow */
+}
+
+/* Password Display */
+#password-display {
+  background-color: #2c2c2c;
+  border-radius: 8px 0 0 8px;
+  font-size: 1.1em;
+  padding: 10px;
+  color: #e0e0e0;
+  border: none;
+  text-align: center;
+}
+
+#password-display:focus {
+  outline: none;
+  box-shadow: 0 0 10px #64ffda;
+}
+
+/* Buttons */
+.generate-btn {
+  background-color: #64ffda; /* Teal Accent */
+  color: #121212; /* Dark Text for Contrast */
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 12px;
+  width: 100%;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+.generate-btn:hover {
+  background-color: #52e2b6; /* Slightly Lighter Teal */
+  transform: translateY(-3px);
+}
+
+.copy-btn {
+  background-color: #424242; /* Gray Button */
+  color: #e0e0e0;
+  border-radius: 0 8px 8px 0;
+  border: none;
+  font-size: 1em;
+  padding: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.copy-btn:hover {
+  background-color: #64ffda;
+  color: #121212;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #64ffda;
+  }
+  50% {
+    box-shadow: 0 0 15px #64ffda;
+  }
+  100% {
+    box-shadow: 0 0 5px #64ffda;
+  }
+}
+
+/* Hover Glow Animation for Buttons */
+.generate-btn:hover,
+.copy-btn:hover {
+  animation: glow 1s infinite;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .password-generator {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .title {
+    font-size: 1.8em;
+  }
+
+  .generate-btn {
+    font-size: 1em;
+    padding: 10px;
+  }
+}
+
+/* Footer Styling */
+.footer {
+ 
+  color: #b0bec5; /* Light Gray Text */
+  text-align: center;
+  padding: 15px 20px;
+  margin-top: 30px;
+  border-top: 1px solid #2c2c2c; /* Subtle Top Border */
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1em;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.footer span {
+  color: #64ffda; /* Teal Accent */
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer span:hover {
+  color: #52e2b6; /* Slightly Lighter Teal on Hover */
+}
